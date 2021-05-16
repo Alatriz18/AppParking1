@@ -22,26 +22,27 @@
             android:paddingTop="4dp"
             android:text="REGISTRO DE USUARIOS"
             android:textColor="#1E1C1C"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView7"
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
             android:layout_width="match_parent"
             android:layout_height="64dp"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
+            android:ems="10"
             android:hint="Apellidos"
+            android:inputType="textPersonName"
             android:paddingLeft="11dp"
             android:textColorHint="#3C3B3B"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView8"
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
             android:layout_width="match_parent"
-            android:layout_height="57dp"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
+            android:layout_height="59dp"
+            android:ems="10"
             android:hint="Nombres"
+            android:inputType="textPersonName"
             android:paddingLeft="11dp"
             android:textColorHint="#3C3B3B"
             android:textSize="24sp" />
@@ -98,13 +99,13 @@
             android:textColorHint="#3C3B3B"
             android:textSize="24sp" />
 
-        <TextView
-            android:id="@+id/textView13"
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
+            android:layout_height="61dp"
+            android:ems="10"
             android:hint="Dirección"
+            android:inputType="textPersonName"
             android:paddingLeft="11dp"
             android:textColorHint="#3C3B3B"
             android:textSize="24sp" />
@@ -127,7 +128,7 @@
         <TextView
             android:id="@+id/textView15"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="8dp" />
 
         <Button
             android:id="@+id/button3"
