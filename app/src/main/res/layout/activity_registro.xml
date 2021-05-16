@@ -26,7 +26,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/txtApellidos"
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:ems="10"
@@ -37,7 +37,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/txtNombres"
             android:layout_width="match_parent"
             android:layout_height="59dp"
             android:ems="10"
@@ -61,7 +61,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/txtIngreseClave"
             android:layout_width="match_parent"
             android:layout_height="67dp"
             android:layout_gravity="center"
@@ -74,7 +74,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/txtConfirmeClave"
             android:layout_width="match_parent"
             android:layout_height="67dp"
             android:layout_gravity="center"
@@ -87,7 +87,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/txtNumero"
             android:layout_width="match_parent"
             android:layout_height="62dp"
             android:layout_gravity="center"
@@ -100,7 +100,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/txtDireccion"
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:ems="10"
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btCrear"
             android:layout_width="339dp"
             android:layout_height="58dp"
             android:layout_gravity="center"
