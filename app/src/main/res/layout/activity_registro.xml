@@ -11,8 +11,8 @@
         android:layout_height="match_parent"
         android:background="@drawable/fondo_degrado"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="222dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/textView4"
@@ -23,11 +23,6 @@
             android:text="REGISTRO DE USUARIOS"
             android:textColor="#1E1C1C"
             android:textSize="24sp" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="33dp" />
 
         <TextView
             android:id="@+id/textView7"
@@ -121,18 +116,25 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="357dp"
-            android:layout_height="65dp"
+            android:layout_width="339dp"
+            android:layout_height="62dp"
             android:layout_gravity="center"
+            android:background="@drawable/borde_botones1"
             android:text="crear cuenta"
             android:textSize="18sp"
             app:backgroundTint="@color/teal_700" />
 
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <Button
             android:id="@+id/button3"
-            android:layout_width="358dp"
-            android:layout_height="64dp"
+            android:layout_width="343dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
+            android:background="@drawable/borde_botones1"
             android:text="cancelar"
             android:textSize="18sp"
             app:backgroundTint="@android:color/holo_red_light" />
