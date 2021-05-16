@@ -114,17 +114,28 @@
             android:textColorHint="#3C3B3B"
             android:textSize="24sp" />
 
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <Button
             android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="crear cuenta" />
+            android:layout_width="357dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:text="crear cuenta"
+            android:textSize="18sp"
+            app:backgroundTint="@color/teal_700" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="cancelar" />
+            android:layout_width="358dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:text="cancelar"
+            android:textSize="18sp"
+            app:backgroundTint="@android:color/holo_red_light" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
