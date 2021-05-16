@@ -97,6 +97,7 @@
             android:layout_height="36dp"
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
+            android:onClick="abrirPantallaRegistro"
             android:text="registrarse"
             android:textColor="#3A3636"
             android:textSize="14sp"
