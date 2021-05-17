@@ -136,6 +136,7 @@
             android:layout_height="58dp"
             android:layout_gravity="center"
             android:background="@drawable/borde_botones1"
+            android:onClick="cerrarPantallaRegistro"
             android:text="cancelar"
             android:textSize="18sp"
             app:backgroundTint="@android:color/holo_red_light" />
