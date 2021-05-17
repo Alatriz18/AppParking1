@@ -6,7 +6,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/color_botones1"
     tools:context=".MainActivity">
-
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -130,4 +133,5 @@
             app:backgroundTintMode="screen" />
 
     </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
