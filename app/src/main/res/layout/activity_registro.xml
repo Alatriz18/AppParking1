@@ -121,6 +121,7 @@
             android:layout_height="58dp"
             android:layout_gravity="center"
             android:background="@drawable/borde_botones1"
+            android:onClick="registrarUsuario"
             android:text="crear cuenta"
             android:textSize="18sp"
             app:backgroundTint="@color/teal_700" />
