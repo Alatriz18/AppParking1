@@ -26,4 +26,17 @@ public class BaseDatos extends SQLiteOpenHelper {
     db.execSQL("DROP TABLE IF EXISTS usuario");//se borra la version anterior de la tabla
     db.execSQL(tablaUsuario);//se crea nuevamente la tabla usuario
     }
+
+    //Proceso3
+
+    public boolean registrarUsuario(String apellidos, String nombres, String email, String password, String telefono, String direccion){
+        SQLiteDatabase miBase=getWritableDatabase();
+        if (miBase !=null){
+            miBase.execSQL("insert into usurio(apellidos_usu, nombres_usu, email_usu, password_usu,telefono_usu, direccion_usu) " +
+                    "values('"+apellidos+", "+nombres+", "+email+", "+password+", "+telefono+", "+direccion+"')");
+            miBase.close();
+            return true;
+        }
+        return false;
+    }
 }
