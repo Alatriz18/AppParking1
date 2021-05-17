@@ -1,4 +1,10 @@
 package com.utc.appparking;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
 /*
 @utor: EnmaMarqui
 @utor: KevinSantana
@@ -6,11 +12,6 @@ creado: 16/05/2021
 modificado: 18/05/2021
 descripcion: ventana  de inicio de sesion acceso, crear cuenta para parueadero
  */
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
