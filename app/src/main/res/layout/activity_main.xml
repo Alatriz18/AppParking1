@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/color_botones1"
     tools:context=".MainActivity">
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -83,7 +83,7 @@
 
         <Button
             android:id="@+id/loginIniciar"
-            android:layout_width="225dp"
+            android:layout_width="232dp"
             android:layout_height="38dp"
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
@@ -100,7 +100,7 @@
 
         <Button
             android:id="@+id/loginRegistrar"
-            android:layout_width="228dp"
+            android:layout_width="234dp"
             android:layout_height="36dp"
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
