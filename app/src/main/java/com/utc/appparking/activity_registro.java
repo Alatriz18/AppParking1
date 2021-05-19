@@ -60,9 +60,9 @@ public class activity_registro extends AppCompatActivity {
         }
         if (password.equals(passwordx)) {
             miBase.registrarUsuario(apellidos, nombres, email, password, telefono, direccion);
-            Toast.makeText(getApplicationContext(), "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getApplicationContext(), "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
             Toast.makeText(getApplicationContext(), "Datos Registrados Con Exito", Toast.LENGTH_SHORT).show();
-            finish();
+
         } else {
             Toast.makeText(getApplicationContext(), "Las contaseñas no coinciden", Toast.LENGTH_SHORT).show();
         }
