@@ -5,10 +5,10 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class BaseDatos extends SQLiteOpenHelper {
-    public static final String nombreBdd="bdd_parking";//definiendo el nombre de la bdd
-    public static final int versionBdd=1;
-    public static final String tablaUsuario="create table usuario(id_usu integer primary key autoincrement," +
-            "apellidos_usu text,nombres_usu text, email_usu text, password_usu text, telefono_usu text, direccion_usu text)";//Estructura de tabla usuario
+    private static final String nombreBdd="bdd_parking";//definiendo el nombre de la bdd
+    private static final int versionBdd=1;
+    private static final String tablaUsuario="create table usuario(id_usu integer primary key autoincrement," +
+            "apellidos_usu text, nombres_usu text, email_usu text, password_usu text, telefono_usu text, direccion_usu text)";//Estructura de tabla usuario
     //constructor
 
     public BaseDatos (Context contexto){super(contexto, nombreBdd,null, versionBdd);}
@@ -32,7 +32,7 @@ public class BaseDatos extends SQLiteOpenHelper {
     public boolean registrarUsuario(String apellidos, String nombres, String email, String password, String telefono, String direccion){
         SQLiteDatabase miBase=getWritableDatabase();
         if (miBase !=null){
-            miBase.execSQL("insert into usurio(apellidos_usu, nombres_usu, email_usu, password_usu,telefono_usu, direccion_usu) " +
+            miBase.execSQL("insert into usuario(apellidos_usu, nombres_usu, email_usu, password_usu,telefono_usu, direccion_usu) " +
                     "values('"+apellidos+", "+nombres+", "+email+", "+password+", "+telefono+", "+direccion+"')");
             miBase.close();
             return true;
