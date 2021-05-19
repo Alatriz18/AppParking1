@@ -49,7 +49,8 @@ public class activity_registro extends AppCompatActivity {
         String passwordx = txtConfirmeClave.getText().toString();
         String telefono = txtNumero.getText().toString();
         String direccion = txtDireccion.getText().toString();
-        if ((apellidos.equals("")) || (nombres.equals("")) || (email.equals("")) || (password.equals("")) || (passwordx.equals("")) || (telefono.equals("")) || (direccion.equals(""))) {
+
+        /*if ((apellidos.equals("")) || (nombres.equals("")) || (email.equals("")) || (password.equals("")) || (passwordx.equals("")) || (telefono.equals("")) || (direccion.equals(""))) {
             Toast.makeText(activity_registro.this, "los campos deben estar llenos", Toast.LENGTH_SHORT).show();
         }
         if (password.length() < 6) {
@@ -58,16 +59,16 @@ public class activity_registro extends AppCompatActivity {
         if (passwordx.length() < 6) {
             Toast.makeText(activity_registro.this, "La contraseña debe tener minimo 6 caracteres.", Toast.LENGTH_SHORT).show();// valida la contarseña tenga 6 caracteres
         }
+         */
+
+
         if (password.equals(passwordx)) {
-            miBase.registrarUsuario(apellidos, nombres, email, password, telefono, direccion);
-            //Toast.makeText(getApplicationContext(), "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
-            Toast.makeText(getApplicationContext(), "Datos Registrados Con Exito", Toast.LENGTH_SHORT).show();
+            miBase.registraUsuario(apellidos, nombres, email, password, telefono, direccion);
+            Toast.makeText(getApplicationContext(), "Registro Exitoso", Toast.LENGTH_SHORT).show();
 
         } else {
-            Toast.makeText(getApplicationContext(), "Las contaseñas no coinciden", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
         }
 
-
-
     }
-    }
+}
