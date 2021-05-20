@@ -11,13 +11,14 @@
         android:layout_height="862dp"
         android:background="@drawable/fondo_degrado"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-20dp"
+        tools:layout_editor_absoluteY="-87dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="223dp" />
+            android:layout_height="187dp" />
 
         <TextView
             android:id="@+id/textView6"
