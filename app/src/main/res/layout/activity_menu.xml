@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degrado"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="728dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:gravity="center"
+            android:text="MENÚ DE OPCIONES:"
+            android:textColor="#0D0D55"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            app:srcCompat="@drawable/parked" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="373dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:background="@drawable/color_botones1"
+            android:gravity="center"
+            android:text="Espacio/Disponibilidad"
+            android:textColor="#0D0D55"
+            android:textSize="18sp"
+            app:backgroundTintMode="screen" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="374dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:background="@drawable/color_botones1"
+            android:gravity="center"
+            android:text="Registro entrada/exit"
+            android:textColor="#0D0D55"
+            android:textSize="18sp"
+            app:backgroundTintMode="screen" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="378dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:background="@drawable/color_botones1"
+            android:gravity="center"
+            android:text="Facturación"
+            android:textColor="#0D0D55"
+            android:textSize="18sp"
+            app:backgroundTintMode="screen" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
