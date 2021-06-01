@@ -18,20 +18,28 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="185dp"
-            android:layout_height="209dp"
-            android:layout_gravity="center"
-            android:padding="4dp"
-            app:srcCompat="@drawable/imglogo" />
-
         <TextView
             android:id="@+id/textView17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
 
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="UTC PARKING"
+            android:textColor="#0A0A33"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            app:srcCompat="@drawable/parked" />
 
         <TextView
             android:id="@+id/textView2"
@@ -41,7 +49,7 @@
             android:text="   Usuario"
             android:textColor="#1B1A1A"
             android:textColorHint="#FFFFFF"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/loginEmail"
@@ -50,7 +58,8 @@
             android:ems="10"
             android:gravity="center"
             android:hint="   Ingrese su correo"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView13"
@@ -65,7 +74,7 @@
             android:gravity="center"
             android:text="   Contraseña"
             android:textColor="#121111"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/loginClave"
@@ -74,17 +83,18 @@
             android:ems="10"
             android:gravity="center"
             android:hint="   Ingrese su clave"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="41dp" />
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/loginIniciar"
             android:layout_width="232dp"
-            android:layout_height="38dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
             android:text="iniciar sesión"
@@ -101,7 +111,7 @@
         <Button
             android:id="@+id/loginRegistrar"
             android:layout_width="234dp"
-            android:layout_height="36dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
             android:onClick="abrirPantallaRegistro"
@@ -119,7 +129,7 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
-            android:layout_height="36dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
             android:text="¿Olvidó su contraseña?"
