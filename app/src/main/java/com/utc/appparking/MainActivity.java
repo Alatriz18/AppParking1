@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Entrada
     EditText loginEmail, loginClave;     //creo objetos
-    BaseDatos bdd;//creo objetito tipo bdd
+    BaseDatos bdd;//creo objeto tipo bdd
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,18 +49,16 @@ public class MainActivity extends AppCompatActivity {
         if (usuarioEncontrado != null) { //email y contraseña sean correctos se obtienn de la bdd
 
             String emailBdd = usuarioEncontrado.getString(3).toString();//get email almacenadoe en la BDD
-            String nombreBdd = usuarioEncontrado.getString(2).toString();//mostramos la bienvenida
-            Toast.makeText(getApplicationContext(),"Bienvenido"+nombreBdd,Toast.LENGTH_LONG).show();
-            finish();//ceierra el formulario de inicio de sesion
+            String nombresBdd = usuarioEncontrado.getString(2).toString();//mostramos la bienvenida
+            Toast.makeText(getApplicationContext(),"Bienvenido"+nombresBdd,Toast.LENGTH_LONG).show();
+            finish();//cierra el formulario de inicio de sesion
 
-            Intent ventanaMenu = new Intent(getApplicationContext(), MenuActivity.class);//objeto para manejar la activity menu
-
-            startActivity(ventanaMenu);//abrir el activity del menu de opciones
+            Intent ventanaMenu =new Intent(getApplicationContext(), MenuActivity.class);//objeto para manejar la activity menu
+            startActivity(ventanaMenu);
 
         } else {
-            //para el caso de que el usuarioEncontrado sea nulo se muestra un mensaje informativo al usuario
-            Toast.makeText(getApplicationContext(), "Email o contraseña incorrectos", Toast.LENGTH_LONG).show();
-            loginClave.setText(""); //limpiamos el campo de la contraseña
+            Toast.makeText(getApplicationContext(),"Email o clave erroneas",Toast.LENGTH_LONG).show();
+            loginClave.setText("");//limpia campo contraseña
         }
     }
 }
