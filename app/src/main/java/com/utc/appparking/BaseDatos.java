@@ -1,6 +1,7 @@
 package com.utc.appparking;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -46,5 +47,21 @@ public class BaseDatos extends SQLiteOpenHelper {
             return true;
         }
         return false;
+    }
+
+    //Proceso 5 para consultar usuarios por email y password.
+    public Cursor obtenerUsuarioPorEmailPassword(String email, String password){
+        SQLiteDatabase miBdd=getWritableDatabase(); // llamado a la base de datos
+        //crear un cursor donde inserto la consulta sql y almaceno los resultados en el objeto usuario
+        Cursor usuario = miBdd.rawQuery("select * from usuario where " +
+                "email_usu='"+email+"' and password_usu = '"+password+"';", null);
+
+        //validar si existe o no la consulta
+        if(usuario.moveToFirst()){ //metodo movetofirst nueve al primer elemento encontrado si hay el usuario
+            return usuario; //retornamos los datos encontrados
+        }else{
+            //no se encuentra informacion de usuaio -> no existe o porque el email y password son incorrectos
+            return null; //devuelvo null si no hay
+        }
     }
 }
