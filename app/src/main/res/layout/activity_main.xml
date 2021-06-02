@@ -97,6 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
+            android:onClick="iniciarSesion"
             android:text="iniciar sesión"
             android:textColor="#3A3636"
             android:textSize="14sp"
