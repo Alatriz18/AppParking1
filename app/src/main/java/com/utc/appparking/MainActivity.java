@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
         if (usuarioEncontrado != null) { //email y contraseña sean correctos se obtienn de la bdd
 
             String emailBdd = usuarioEncontrado.getString(3).toString();//get email almacenadoe en la BDD
-            String nombresBdd = usuarioEncontrado.getString(2).toString();//mostramos la bienvenida
-            Toast.makeText(getApplicationContext(),"Bienvenido"+nombresBdd,Toast.LENGTH_LONG).show();
+            String nombreBdd = usuarioEncontrado.getString(2).toString();//mostramos la bienvenida
+            Toast.makeText(getApplicationContext(),"Bienvenido"+nombreBdd,Toast.LENGTH_LONG).show();
             finish();//cierra el formulario de inicio de sesion
             // Guardar en un SHARED PREFERENCES
             SharedPreferences preferencias = getSharedPreferences("sesion_usuario", Context.MODE_PRIVATE);

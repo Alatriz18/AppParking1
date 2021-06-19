@@ -56,9 +56,9 @@
             app:backgroundTintMode="screen" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/textView18"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="11dp" />
 
         <Button
             android:id="@+id/button5"
@@ -74,9 +74,9 @@
             app:backgroundTintMode="screen" />
 
         <TextView
-            android:id="@+id/textView25"
+            android:id="@+id/textView16"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="11dp" />
 
         <Button
             android:id="@+id/button6"
@@ -90,6 +90,7 @@
             android:textColor="#0D0D55"
             android:textSize="18sp"
             app:backgroundTintMode="screen" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -108,6 +109,26 @@
                 android:onClick="cerrarSesion"
                 android:text="Cerrar Sesion" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="381dp"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:background="@drawable/color_botones1"
+            android:gravity="center"
+            android:onClick="cerrarPantallaMenu"
+            android:text="Salir"
+            android:textColor="#0D0D55"
+            android:textSize="18sp"
+            app:backgroundTint="@android:color/holo_red_light"
+            app:backgroundTintMode="src_in" />
+
 
     </LinearLayout>
 

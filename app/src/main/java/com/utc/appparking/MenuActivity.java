@@ -15,6 +15,7 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
     }
+
     public void cerrarSesion(View vista) {
         // Guardar en un SHARED PREFERENCES
         SharedPreferences preferencias = getSharedPreferences("sesion_usuario", Context.MODE_MULTI_PROCESS);
@@ -52,4 +53,10 @@ public class MenuActivity extends AppCompatActivity {
         // Abrir la nueva pantall
         startActivity(menuFacturacion);
 }
+
+    public void cerrarPantallaMenu(View vista){
+
+        finish();//cierra pantalla Menu opciones.
+    }
+
 }
