@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_degrado"
+    android:onClick="cerrarSesion"
     tools:context=".MenuActivity">
 
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="728dp"
         android:orientation="vertical"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="2dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="2dp">
 
         <TextView
             android:id="@+id/textView26"
@@ -48,6 +49,7 @@
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
             android:gravity="center"
+            android:onClick="menupEspacio"
             android:text="Espacio/Disponibilidad"
             android:textColor="#0D0D55"
             android:textSize="18sp"
@@ -65,6 +67,7 @@
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
             android:gravity="center"
+            android:onClick="menupEntrada"
             android:text="Registro entrada/exit"
             android:textColor="#0D0D55"
             android:textSize="18sp"
@@ -82,10 +85,29 @@
             android:layout_gravity="center"
             android:background="@drawable/color_botones1"
             android:gravity="center"
+            android:onClick="menupFacturacion"
             android:text="Facturación"
             android:textColor="#0D0D55"
             android:textSize="18sp"
             app:backgroundTintMode="screen" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cerrarSesion"
+                android:text="Cerrar Sesion" />
+        </LinearLayout>
 
     </LinearLayout>
 

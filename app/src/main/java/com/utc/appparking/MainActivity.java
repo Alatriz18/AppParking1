@@ -2,7 +2,9 @@ package com.utc.appparking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
@@ -52,11 +54,18 @@ public class MainActivity extends AppCompatActivity {
             String nombresBdd = usuarioEncontrado.getString(2).toString();//mostramos la bienvenida
             Toast.makeText(getApplicationContext(),"Bienvenido"+nombresBdd,Toast.LENGTH_LONG).show();
             finish();//cierra el formulario de inicio de sesion
-
+            // Guardar en un SHARED PREFERENCES
+            SharedPreferences preferencias = getSharedPreferences("sesion_usuario", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferencias.edit();
+            editor.putString("estado_usu", "activo");
+            // Confirmar cambios del share prerences
+            editor.commit();
+            //
             Intent ventanaMenu =new Intent(getApplicationContext(), MenuActivity.class);//objeto para manejar la activity menu
             startActivity(ventanaMenu);
 
         } else {
+
             Toast.makeText(getApplicationContext(),"Email o clave erroneas",Toast.LENGTH_LONG).show();
             loginClave.setText("");//limpia campo contraseña
         }
